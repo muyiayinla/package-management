@@ -33,6 +33,11 @@ sudo passwd sonar
 ```sh
 sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]no/c\PasswordAuthentication yes" /etc/ssh/sshd_config
 sudo service sshd restart
+
+## start, stop and status sonaqube,
+sh /opt/sonarqube/bin/linux-x86-64/sonar.sh start
+sh /opt/sonarqube/bin/linux-x86-64/sonar.sh stop
+sh /opt/sonarqube/bin/linux-x86-64/sonar.sh status
 ```
 ### 3. Install Java JDK 1.8+ required for sonarqube to start
 
